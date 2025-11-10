@@ -1,0 +1,18 @@
+export default function IconMenuBar() {
+  return (
+    <svg
+      width="24"
+      height="16"
+      viewBox="0 0 24 16"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect width="24" height="2" fill="#253D4E" />
+      <rect width="24" height="2" fill="#253D4E" />
+      <rect y="7" width="24" height="2" fill="#253D4E" />
+      <rect y="7" width="24" height="2" fill="#253D4E" />
+      <rect y="14" width="24" height="2" fill="#253D4E" />
+      <rect y="14" width="24" height="2" fill="#253D4E" />
+    </svg>
+  );
+}
