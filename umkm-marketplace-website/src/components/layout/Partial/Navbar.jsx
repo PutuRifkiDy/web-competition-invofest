@@ -72,7 +72,7 @@ export default function Navbar() {
           <div className="flex flex-row gap-5 items-center">
             <Link
               to={"/register-shop"}
-              className="flex flex-row items-center gap-4 py-3 px-6 text-[#3BB77E] border border-[#ECECEC] leading-[26px] tracking-[0.5px] h-fit rounded-[5px] shadow-sm hover:text-white hover:bg-[#3BB77E] transition-all duration-300 ease-in-out group"
+              className="flex flex-row items-center gap-4 py-3 px-6 text-[#3BB77E] border border-[#ECECEC] leading-[26px] tracking-[0.5px] font-medium h-fit rounded-[5px] shadow-sm hover:text-white hover:bg-[#3BB77E] transition-all duration-300 ease-in-out group"
             >
               Buka Toko
               {/* <IconArrowRight /> */}
@@ -109,7 +109,7 @@ export default function Navbar() {
         <div className="h-[1px] w-full bg-[#DEDFE2]"></div>
         <div className="px-12 py-3 md:flex flex-row items-center justify-between">
           <Select>
-            <SelectTrigger className="w-[200px] bg-[#3EB489] data-[placeholder]:text-white data-[placeholder]:font-medium">
+            <SelectTrigger className="w-[200px] bg-[#3EB489] data-[placeholder]:text-white data-[placeholder]:font-medium text-white focus:ring-0">
               <SelectValue placeholder="Pilih Kategori Produk"></SelectValue>
             </SelectTrigger>
             <SelectContent>
@@ -221,7 +221,7 @@ export default function Navbar() {
             </div>
             <Link
               to={"/register-shop"}
-              className="flex flex-row items-center gap-4 py-3 px-6 text-[#3BB77E] border border-[#ECECEC] leading-[26px] tracking-[0.5px] h-fit w-full rounded-[5px] shadow-sm "
+              className="flex flex-row items-center gap-4 py-3 px-6 text-[#3BB77E] border border-[#ECECEC] leading-[26px] tracking-[0.5px] h-fit w-full rounded-[5px] shadow-sm"
             >
               Buka Toko
               <IconArrowRight />

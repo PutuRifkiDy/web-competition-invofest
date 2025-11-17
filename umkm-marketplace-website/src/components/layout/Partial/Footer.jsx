@@ -34,7 +34,7 @@ export default function Footer() {
           </div>
 
           <div className="flex flex-col gap-5">
-            <p className="text-lg font-medium">Navigasi</p>
+            <p className="text-lg font-semibold">Navigasi</p>
             <Link
               to="/"
               className="text-gray-600 flex flex-row items-center gap-1 group"
@@ -73,7 +73,7 @@ export default function Footer() {
           </div>
 
           <div className="flex flex-col gap-5">
-            <p className="text-lg font-medium">Informasi</p>
+            <p className="text-lg font-semibold">Informasi</p>
             <a href="#" className="text-gray-600">
               Tentang Kami
             </a>
@@ -86,7 +86,7 @@ export default function Footer() {
           </div>
 
           <div className="flex flex-col gap-5">
-            <p className="text-lg font-medium">Bantuan</p>
+            <p className="text-lg font-semibold">Bantuan</p>
             <a href="#" className="text-gray-600">
               Pusat Bantuan
             </a>
