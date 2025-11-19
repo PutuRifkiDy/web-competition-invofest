@@ -125,7 +125,7 @@ export default function Navbar() {
             </SelectContent>
           </Select>
           <div className="flex flex-row gap-24 items-center">
-            <Link className="font-bold text-[16px] text-[#253D4E] hover:text-[#3EB489] transition-all duration-300 ease-in-out">
+            <Link to={"/"} className="font-bold text-[16px] text-[#253D4E] hover:text-[#3EB489] transition-all duration-300 ease-in-out">
               Beranda
             </Link>
             <Link className="font-bold text-[16px] text-[#253D4E] hover:text-[#3EB489] transition-all duration-300 ease-in-out">

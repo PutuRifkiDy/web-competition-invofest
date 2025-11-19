@@ -9,7 +9,7 @@ export default function CardTopProductComponent({
 }) {
 
   return (
-    <div className="flex gap-5 items-center">
+    <div className="flex lg:flex-row md:flex-col flex-col gap-5 items-center">
       <img
         src={imagePath}
         className="md:w-[112.5px] md:h-[112.5px] w-full h-auto"

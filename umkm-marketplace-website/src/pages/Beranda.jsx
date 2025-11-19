@@ -20,7 +20,6 @@ import {
   ArrowLongRightIcon,
   ArrowRightIcon,
 } from "@heroicons/react/24/solid";
-import { useState } from "react";
 import useSwiperNavigation from "@/hooks/useSwiperNavigation";
 import {
   Select,
@@ -43,6 +42,7 @@ import CardOfferProductComponent from "@/components/home/CardOfferProductCompone
 import CardProductComponent from "@/components/home/CardProductComponent";
 import NewsLetterSection from "@/components/home/NewsLetterSection";
 import BannerSlogan from "@/components/home/BannerSlogan";
+import { useState } from "react";
 
 export default function Beranda() {
   const {
@@ -133,10 +133,18 @@ export default function Beranda() {
       {/* start category */}
       <section className="flex flex-col md:px-12 px-5 mt-10 gap-5">
         <div className="flex flex-row justify-between items-center">
-          <h1 className="font-bold text-[32px] leading-[30px] text-[#253D4E]">
+          <h1
+            className="font-bold text-[32px] leading-[30px] text-[#253D4E]"
+            data-aos="fade-up"
+            data-aos-duration="600"
+          >
             Kategori Produk
           </h1>
-          <div className="flex flex-row gap-5 items-center">
+          <div
+            className="flex flex-row gap-5 items-center"
+            data-aos="fade-up"
+            data-aos-duration="600"
+          >
             <button
               className="bg-gray-200 rounded-full p-3"
               onClick={categorySlidePrev}
@@ -164,68 +172,84 @@ export default function Beranda() {
               slidesPerView: 4,
             },
             1024: {
-              slidesPerView: 6,
+              slidesPerView: 5,
             },
             1440: {
-              slidesPerView: 8,
+              slidesPerView: 6,
             },
           }}
         >
           <SwiperSlide>
-            <CardCategoryComponent
-              title="Fashion & Aksesoris"
-              totalStok="11"
-              imagePath="./category/fashion.png"
-            />
+            <Link to={"/products"}>
+              <CardCategoryComponent
+                title="Fashion & Aksesoris"
+                totalStok="11"
+                imagePath="./category/fashion.png"
+              />
+            </Link>
           </SwiperSlide>
           <SwiperSlide>
-            <CardCategoryComponent
-              title="Makanan & Minuman"
-              totalStok="5"
-              imagePath="./category/food.png"
-            />
+            <Link to={"/products"}>
+              <CardCategoryComponent
+                title="Makanan & Minuman"
+                totalStok="5"
+                imagePath="./category/food.png"
+              />
+            </Link>
           </SwiperSlide>
           <SwiperSlide>
-            <CardCategoryComponent
-              title="Baby Care"
-              totalStok="6"
-              imagePath="./category/babycare.png"
-            />
+            <Link to={"/products"}>
+              <CardCategoryComponent
+                title="Baby Care"
+                totalStok="6"
+                imagePath="./category/babycare.png"
+              />
+            </Link>
           </SwiperSlide>
           <SwiperSlide>
-            <CardCategoryComponent
-              title="Home Care"
-              totalStok="11"
-              imagePath="./category/homecare.png"
-            />
+            <Link to={"/products"}>
+              <CardCategoryComponent
+                title="Home Care"
+                totalStok="11"
+                imagePath="./category/homecare.png"
+              />
+            </Link>
           </SwiperSlide>
           <SwiperSlide>
-            <CardCategoryComponent
-              title="Skin Care"
-              totalStok="8"
-              imagePath="./category/skincare.png"
-            />
+            <Link to={"/products"}>
+              <CardCategoryComponent
+                title="Skin Care"
+                totalStok="8"
+                imagePath="./category/skincare.png"
+              />
+            </Link>
           </SwiperSlide>
           <SwiperSlide>
-            <CardCategoryComponent
-              title="Toys"
-              totalStok="8"
-              imagePath="./category/toys.png"
-            />
+            <Link to={"/products"}>
+              <CardCategoryComponent
+                title="Toys"
+                totalStok="8"
+                imagePath="./category/toys.png"
+              />
+            </Link>
           </SwiperSlide>
           <SwiperSlide>
-            <CardCategoryComponent
-              title="Decoration"
-              totalStok="5"
-              imagePath="./category/decoration.png"
-            />
+            <Link to={"/products"}>
+              <CardCategoryComponent
+                title="Decoration"
+                totalStok="5"
+                imagePath="./category/decoration.png"
+              />
+            </Link>
           </SwiperSlide>
           <SwiperSlide>
-            <CardCategoryComponent
-              title="Digital Technology"
-              totalStok="6"
-              imagePath="./category/digital.png"
-            />
+            <Link to={"/products"}>
+              <CardCategoryComponent
+                title="Digital Technology"
+                totalStok="6"
+                imagePath="./category/digital.png"
+              />
+            </Link>
           </SwiperSlide>
         </Swiper>
       </section>

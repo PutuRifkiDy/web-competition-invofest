@@ -1,6 +1,6 @@
 export default function CardCategoryComponent({ imagePath, title, totalStok }) {
   return (
-    <div className="bg-[#F2FCE4] rounded-[10px] p-6 flex flex-col items-center justify-center text-center">
+    <div className="bg-[#F2FCE4] rounded-[10px] p-6 flex flex-col items-center justify-center text-center hover:scale-105 transition-all duration-300 ease-in-out">
       <img
         src={imagePath}
         alt="Fashion & Aksesoris"

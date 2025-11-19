@@ -8,11 +8,16 @@ import DetailProduct from "./pages/DetailProduct";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import RegisterShop from "./pages/RegisterShop";
+import Products from "./pages/Products";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Beranda />,
+  },
+  {
+    path: "/products",
+    element: <Products />,
   },
   {
     path: "/blog",

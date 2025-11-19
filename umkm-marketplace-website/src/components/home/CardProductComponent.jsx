@@ -25,7 +25,7 @@ export default function CardProductComponent({
     return backgroundColor;
   };
   return (
-    <div className="relative flex flex-col border-[1px] border-[#ECECEC] rounded-[15px] overflow-hidden">
+    <Link to={"/detail-product"} className="relative flex flex-col border-[1px] border-[#ECECEC] rounded-[15px] overflow-hidden hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer">
       <div
         className={`absolute left-0 top-0 ${getDiscountColor(
           discount
@@ -64,6 +64,6 @@ export default function CardProductComponent({
           </Link>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
